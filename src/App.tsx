@@ -27,14 +27,11 @@ function AppContent() {
 function App() {
   return (
     <FrontContextProvider>
-
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<AppContent />} />
-            {/* <Route path="/auth0-callback" element={<Auth0Callback />} /> */}
-          </Routes>
-        </BrowserRouter>
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AppContent />} />
+        </Routes>
+      </BrowserRouter>
     </FrontContextProvider>
   );
 }
